@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #333; /* Changed to black */
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000; /* Darker black on hover */
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: #333; /* Changed to black */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000; /* Changed hover to darker black */
+}
+
+/* Task List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+li {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    margin-right: 10px;
+}
+
+li a {
+    background-color: #333; /* Changed to black */
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #000; /* Darker black on hover */
+}
+
+/* Button Link Style */
+.btn-create-task {
+    display: inline-block;
+    background-color: #333; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 10px 15px; /* Padding for button-like appearance */
+    border-radius: 4px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-create-task:hover {
+    background-color: #000; /* Darker black on hover */
+}
