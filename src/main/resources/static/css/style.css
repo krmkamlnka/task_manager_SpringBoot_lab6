@@ -1,121 +1,155 @@
-/* General Styles */
+/* General Page Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
 }
 
 h2 {
+    text-align: center;
+    margin-top: 20px;
     color: #333;
+}
+
+/* Styling for the Search Form */
+form {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Form Styles */
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-}
-
-input, textarea, button {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+form input[type="text"] {
+    padding: 8px;
     font-size: 16px;
+    width: 250px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-button {
-    background-color: #333; /* Changed to black */
-    color: #ffffff;
-    font-weight: bold;
+form button {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #000; /* Darker black on hover */
+form button:hover {
+    background-color: #45a049;
 }
 
-/* Link Styles */
-a {
+/* Styling for the Table */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+td a {
+    color: #ff4d4d;
     text-decoration: none;
-    color: #333; /* Changed to black */
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Pagination Styling */
+div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #000; /* Changed hover to darker black */
+    background-color: #ddd;
 }
 
-/* Task List Styles */
-ul {
-    list-style: none;
-    padding: 0;
-    max-width: 600px;
-    margin: 0 auto;
+a:active {
+    background-color: #ccc;
 }
 
-li {
-    background: #ffffff;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-li span {
-    margin-right: 10px;
-}
-
-li a {
-    background-color: #333; /* Changed to black */
-    color: #ffffff;
-    padding: 5px 10px;
+/* Styling for the Description Textarea */
+textarea {
+    padding: 8px;
+    font-size: 16px;
+    width: 30%;
+    height: 120px;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 14px;
-    text-decoration: none;
+    resize: vertical;
+    box-sizing: border-box; /* Ensures padding is included in width/height calculation */
 }
 
-li a:hover {
-    background-color: #000; /* Darker black on hover */
+/* For Input Fields (Title, Priority, Status) */
+input[type="text"], input[type="number"], select {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-/* Button Link Style */
-.btn-create-task {
-    display: inline-block;
-    background-color: #333; /* Black background */
-    color: #ffffff; /* White text */
-    padding: 10px 15px; /* Padding for button-like appearance */
-    border-radius: 4px; /* Rounded corners */
+/* For Buttons */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Create New Task Link */
+a[href='/tasks/new'] {
+    display: block;
     text-align: center;
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
 }
 
-.btn-create-task:hover {
-    background-color: #000; /* Darker black on hover */
+a[href='/tasks/new']:hover {
+    background-color: #45a049;
 }
